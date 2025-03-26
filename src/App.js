@@ -26,37 +26,6 @@
 
 
 
-// src/App.js
-
-// import React, { useState } from "react";
-// import Header from "./components/Header";
-// import DepartmentList from "./components/DepartmentList";
-// import AddDepartment from "./components/AddDepartment";
-// import "./style.css";
-
-// function App() {
-//   // Optionally, manage state to refresh the department list when a new one is added.
-//   const [refresh, setRefresh] = useState(false);
-
-//   const handleDepartmentAdded = () => {
-//     // Toggle refresh or implement a more targeted update
-//     setRefresh(!refresh);
-//   };
-
-//   return (
-//     <div className="main-container">
-//       <Header />
-//       <AddDepartment onDepartmentAdded={handleDepartmentAdded} />
-//       <DepartmentList key={refresh} />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
-// src/App.js
 
 import React, { useState } from "react";
 import Header from "./components/Header";

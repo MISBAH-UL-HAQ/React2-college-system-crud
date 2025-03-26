@@ -1,4 +1,4 @@
-// src/components/AddStudent.jsx
+
 
 import React, { useState, useEffect } from "react";
 import { addStudent, updateStudent } from "../api/api";
