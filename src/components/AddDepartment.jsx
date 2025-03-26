@@ -12,7 +12,7 @@ function AddDepartment({ onDepartmentAdded }) {
       const newDept = await addDepartment({ name });
       alert("Department added successfully!");
       setName("");
-      // Refresh the list in the parent component
+     
       if (onDepartmentAdded) onDepartmentAdded(newDept);
     } catch (error) {
       console.error("Add failed:", error);

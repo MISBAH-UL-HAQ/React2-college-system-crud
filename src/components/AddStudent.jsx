@@ -6,7 +6,7 @@ import { addStudent, updateStudent } from "../api/api";
 function AddStudent({ onStudentSaved, selectedStudent, clearSelectedStudent }) {
   const [student, setStudent] = useState({ name: "", departmentId: "" });
 
-  // When a student is set for editing, populate the form fields.
+  
   useEffect(() => {
     if (selectedStudent) {
       setStudent(selectedStudent);
@@ -22,12 +22,12 @@ function AddStudent({ onStudentSaved, selectedStudent, clearSelectedStudent }) {
     e.preventDefault();
     try {
       if (student.id) {
-        // Update mode
+     
         const updated = await updateStudent(student);
         alert("Student updated successfully!");
         onStudentSaved(updated);
       } else {
-        // Create mode
+      
         const newStudent = await addStudent(student);
         alert("Student added successfully!");
         onStudentSaved(newStudent);

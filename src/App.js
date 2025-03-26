@@ -36,12 +36,12 @@ import AddStudent from "./components/AddStudent";
 import "./style.css";
 
 function App() {
-  // For students, manage a “refresh” toggle and an editable student selection
+ 
   const [studentRefresh, setStudentRefresh] = useState(false);
   const [selectedStudent, setSelectedStudent] = useState(null);
 
   const handleStudentSaved = (student) => {
-    // Optionally use the student data to update local list or toggle refresh.
+    
     setStudentRefresh(!studentRefresh);
   };
 

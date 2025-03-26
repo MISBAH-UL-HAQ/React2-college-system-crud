@@ -32,7 +32,7 @@ function DepartmentList() {
 
   const handleEdit = (dept) => {
     setEditDepartment(dept);
-    setNewName(dept.name); // Pre-fill the form with the department's current name
+    setNewName(dept.name); 
   };
 
   const handleUpdate = async (e) => {
@@ -51,8 +51,8 @@ function DepartmentList() {
           dept.id === updatedDept.id ? updatedDept : dept
         )
       );
-      setEditDepartment(null); // Close the edit form
-      setNewName(""); // Reset the form field
+      setEditDepartment(null); 
+      setNewName(""); 
     } catch (error) {
       console.error("Update failed:", error);
     }
